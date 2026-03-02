@@ -1,0 +1,902 @@
+{
+  "meta": {
+    "schema": "eva.discovery.v2",
+    "generated_at": "2026-02-25T06:37:10.583Z",
+    "repo": "C:\\AICOE\\eva-foundation\\16-engineered-case-law"
+  },
+  "project": null,
+  "planned": {
+    "epic": {
+      "title": "JP Engineered Case Law",
+      "source": "README.md"
+    },
+    "features": [
+      {
+        "id": "F16-01",
+        "title": "Status",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-02",
+        "title": "1. Context and Problem Statement",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-03",
+        "title": "2. What ?Engineered Case Law? Means",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-04",
+        "title": "3. Core Principles (Non-Negotiable)",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-05",
+        "title": "4. High-Level Ingestion Flow",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-06",
+        "title": "5. Artifact Strategy",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-07",
+        "title": "6. Text Extraction Strategy (Cost-Optimal)",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-08",
+        "title": "7. Bilingual Handling",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-09",
+        "title": "8. Engineered Case Law Generation (ECL v2.1)",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-10",
+        "title": "9. EVA DA Ingestion and Testing",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-11",
+        "title": "10. Measuring ?Does This Work??",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-12",
+        "title": "11. Known Risks (Acknowledged)",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-13",
+        "title": "12. What This Enables",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-14",
+        "title": "13. Completed Achievements & Next Steps",
+        "source": "veritas-plan.json"
+      }
+    ],
+    "stories": [
+      {
+        "id": "F16-04-001",
+        "title": "3.1 The corpus is process-managed, not snapshot-managed",
+        "feature_id": "F16-04",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-04-002",
+        "title": "3.2 CanLII is the authoritative discovery layer",
+        "feature_id": "F16-04",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-04-003",
+        "title": "3.3 Case is the canonical unit",
+        "feature_id": "F16-04",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-04-004",
+        "title": "3.4 Cost must scale with *change*, not corpus size",
+        "feature_id": "F16-04",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-06-001",
+        "title": "5.1 PoC Approach: SQLite as Convenience Source",
+        "feature_id": "F16-06",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-06-002",
+        "title": "5.2 PDFs (Referenced, Not Re-Extracted)",
+        "feature_id": "F16-06",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-06-003",
+        "title": "5.3 HTML Pages (Metadata Source)",
+        "feature_id": "F16-06",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-07-001",
+        "title": "Default Path",
+        "feature_id": "F16-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-07-002",
+        "title": "Selective OCR",
+        "feature_id": "F16-07",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-09-001",
+        "title": "8.1 Canonical Case Text",
+        "feature_id": "F16-09",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-09-002",
+        "title": "8.2 Micro-Header Chunking System (EPIC 6 - 80% Complete)",
+        "feature_id": "F16-09",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-09-003",
+        "title": "8.3 ECL v2.1 Document Structure",
+        "feature_id": "F16-09",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-11-001",
+        "title": "10.1 Retrieval Quality",
+        "feature_id": "F16-11",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-11-002",
+        "title": "10.2 Citation Correctness",
+        "feature_id": "F16-11",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-11-003",
+        "title": "10.3 Freshness and Coverage",
+        "feature_id": "F16-11",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-14-001",
+        "title": "? Completed (February 1, 2026)",
+        "feature_id": "F16-14",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F16-14-002",
+        "title": "? Next Steps (PoC Phase Priority)",
+        "feature_id": "F16-14",
+        "source": "veritas-plan.json"
+      }
+    ],
+    "tasks": [],
+    "acceptance": [],
+    "declared_status": {}
+  },
+  "actual": {
+    "artifacts": [
+      {
+        "path": ".gitignore",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "ACCEPTANCE.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "ECL-COMPREHENSIVE-GUIDE.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "ECL-QUICK-REFERENCE.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "ECL-V2.2-FINAL-SUMMARY.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "ECL-V2.3-ENHANCEMENT-ASSESSMENT.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "ECL-V2.3-SPECIFICATION.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "engineered-case-law-rel-notes-v1.0.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "engineered-case-law-tasks.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "engineered-case-law.instructions.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "IMPLEMENTATION-STATUS-UPDATE.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "IMPLEMENTATION_COMPLETE_v2.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "PHASE-2-BACKEND-INGESTION.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "PLAN.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "prompt-wrapper.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "README.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "repo-inspection-20260128-1354.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": ".github/copilot-instructions.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/artifact_manager.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/AUDIT-REPORT-2026-02-01.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/canlii_inventory.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/check_years.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/COMPREHENSIVE-AUDIT-2026-02-01.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/config.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/db_loader.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/ecl_formatter.py",
+        "type": "code",
+        "story_tags": [
+          "F16-04-001",
+          "F16-04-002",
+          "F16-04-003",
+          "F16-04-004",
+          "F16-06-001",
+          "F16-06-002",
+          "F16-06-003",
+          "F16-07-001",
+          "F16-07-002",
+          "F16-09-001",
+          "F16-09-002",
+          "F16-09-003",
+          "F16-11-001",
+          "F16-11-002",
+          "F16-11-003",
+          "F16-14-001",
+          "F16-14-002"
+        ]
+      },
+      {
+        "path": "pipeline/ecl_formatter_NEW.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/epic4-canonical-text-schema.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/eva-chunk-probe-001.txt",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/eva-chunk-probe-002.txt",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/eva-chunk-probe-003.txt",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/eva-chunk-probe-004.txt",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/eva-chunk-probe-005.txt",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/generate_ecl_v2.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/IMPLEMENTATION-SUMMARY-2026-02-01.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/logger.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/pipeline-acquisition-20260131-0701.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/PIPELINE-SCRIPTS-INVENTORY.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/query_db_stats.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/README-ECL-V2.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/README.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/requirements.txt",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/test_v221.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/text_extractor.py",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "pipeline/validators.py",
+        "type": "code",
+        "story_tags": []
+      }
+    ],
+    "story_artifact_map": {
+      "F16-04-001": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-04-002": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-04-003": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-04-004": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-06-001": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-06-002": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-06-003": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-07-001": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-07-002": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-09-001": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-09-002": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-09-003": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-11-001": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-11-002": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-11-003": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-14-001": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      },
+      "F16-14-002": {
+        "artifacts": [
+          {
+            "path": "pipeline/ecl_formatter.py",
+            "type": "code",
+            "story_tags": [
+              "F16-04-001",
+              "F16-04-002",
+              "F16-04-003",
+              "F16-04-004",
+              "F16-06-001",
+              "F16-06-002",
+              "F16-06-003",
+              "F16-07-001",
+              "F16-07-002",
+              "F16-09-001",
+              "F16-09-002",
+              "F16-09-003",
+              "F16-11-001",
+              "F16-11-002",
+              "F16-11-003",
+              "F16-14-001",
+              "F16-14-002"
+            ]
+          }
+        ]
+      }
+    },
+    "commit_evidence_map": {}
+  }
+}

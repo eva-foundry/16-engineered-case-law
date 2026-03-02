@@ -1,0 +1,220 @@
+{
+  "schema": "eva.veritas-plan.v1",
+  "generated_at": "2026-02-25T06:37:10.047Z",
+  "generated_from": [
+    "PLAN.md"
+  ],
+  "format_detected": "veritas",
+  "prefix": "F16",
+  "features": [
+    {
+      "id": "F16-01",
+      "title": "Status",
+      "source_heading": "## Feature: Status [ID=F16-01]",
+      "stories": []
+    },
+    {
+      "id": "F16-02",
+      "title": "1. Context and Problem Statement",
+      "source_heading": "## Feature: 1. Context and Problem Statement [ID=F16-02]",
+      "stories": []
+    },
+    {
+      "id": "F16-03",
+      "title": "2. What ?Engineered Case Law? Means",
+      "source_heading": "## Feature: 2. What ?Engineered Case Law? Means [ID=F16-03]",
+      "stories": []
+    },
+    {
+      "id": "F16-04",
+      "title": "3. Core Principles (Non-Negotiable)",
+      "source_heading": "## Feature: 3. Core Principles (Non-Negotiable) [ID=F16-04]",
+      "stories": [
+        {
+          "id": "F16-04-001",
+          "title": "3.1 The corpus is process-managed, not snapshot-managed",
+          "feature_id": "F16-04",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F16-04-002",
+          "title": "3.2 CanLII is the authoritative discovery layer",
+          "feature_id": "F16-04",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F16-04-003",
+          "title": "3.3 Case is the canonical unit",
+          "feature_id": "F16-04",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F16-04-004",
+          "title": "3.4 Cost must scale with *change*, not corpus size",
+          "feature_id": "F16-04",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F16-05",
+      "title": "4. High-Level Ingestion Flow",
+      "source_heading": "## Feature: 4. High-Level Ingestion Flow [ID=F16-05]",
+      "stories": []
+    },
+    {
+      "id": "F16-06",
+      "title": "5. Artifact Strategy",
+      "source_heading": "## Feature: 5. Artifact Strategy [ID=F16-06]",
+      "stories": [
+        {
+          "id": "F16-06-001",
+          "title": "5.1 PoC Approach: SQLite as Convenience Source",
+          "feature_id": "F16-06",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F16-06-002",
+          "title": "5.2 PDFs (Referenced, Not Re-Extracted)",
+          "feature_id": "F16-06",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F16-06-003",
+          "title": "5.3 HTML Pages (Metadata Source)",
+          "feature_id": "F16-06",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F16-07",
+      "title": "6. Text Extraction Strategy (Cost-Optimal)",
+      "source_heading": "## Feature: 6. Text Extraction Strategy (Cost-Optimal) [ID=F16-07]",
+      "stories": [
+        {
+          "id": "F16-07-001",
+          "title": "Default Path",
+          "feature_id": "F16-07",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F16-07-002",
+          "title": "Selective OCR",
+          "feature_id": "F16-07",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F16-08",
+      "title": "7. Bilingual Handling",
+      "source_heading": "## Feature: 7. Bilingual Handling [ID=F16-08]",
+      "stories": []
+    },
+    {
+      "id": "F16-09",
+      "title": "8. Engineered Case Law Generation (ECL v2.1)",
+      "source_heading": "## Feature: 8. Engineered Case Law Generation (ECL v2.1) [ID=F16-09]",
+      "stories": [
+        {
+          "id": "F16-09-001",
+          "title": "8.1 Canonical Case Text",
+          "feature_id": "F16-09",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F16-09-002",
+          "title": "8.2 Micro-Header Chunking System (EPIC 6 - 80% Complete)",
+          "feature_id": "F16-09",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F16-09-003",
+          "title": "8.3 ECL v2.1 Document Structure",
+          "feature_id": "F16-09",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F16-10",
+      "title": "9. EVA DA Ingestion and Testing",
+      "source_heading": "## Feature: 9. EVA DA Ingestion and Testing [ID=F16-10]",
+      "stories": []
+    },
+    {
+      "id": "F16-11",
+      "title": "10. Measuring ?Does This Work??",
+      "source_heading": "## Feature: 10. Measuring ?Does This Work?? [ID=F16-11]",
+      "stories": [
+        {
+          "id": "F16-11-001",
+          "title": "10.1 Retrieval Quality",
+          "feature_id": "F16-11",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F16-11-002",
+          "title": "10.2 Citation Correctness",
+          "feature_id": "F16-11",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F16-11-003",
+          "title": "10.3 Freshness and Coverage",
+          "feature_id": "F16-11",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F16-12",
+      "title": "11. Known Risks (Acknowledged)",
+      "source_heading": "## Feature: 11. Known Risks (Acknowledged) [ID=F16-12]",
+      "stories": []
+    },
+    {
+      "id": "F16-13",
+      "title": "12. What This Enables",
+      "source_heading": "## Feature: 12. What This Enables [ID=F16-13]",
+      "stories": []
+    },
+    {
+      "id": "F16-14",
+      "title": "13. Completed Achievements & Next Steps",
+      "source_heading": "## Feature: 13. Completed Achievements & Next Steps [ID=F16-14]",
+      "stories": [
+        {
+          "id": "F16-14-001",
+          "title": "? Completed (February 1, 2026)",
+          "feature_id": "F16-14",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F16-14-002",
+          "title": "? Next Steps (PoC Phase Priority)",
+          "feature_id": "F16-14",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "schema": "eva.trust.v2",
+    "generated_at": "2026-02-25T06:37:10.605Z",
+    "repo": "C:\\AICOE\\eva-foundation\\16-engineered-case-law",
+    "reconciliation_path": "C:\\AICOE\\eva-foundation\\16-engineered-case-law\\.eva\\reconciliation.json"
+  },
+  "score": 50,
+  "stale": false,
+  "sparkline": "0 -> 0 -> 0 -> 0 -> 0 -> 0 -> 50",
+  "sparkline_delta": "+50",
+  "components": {
+    "coverage": 1,
+    "evidenceCompleteness": 0,
+    "consistencyScore": 0
+  },
+  "actions": [
+    "review-required",
+    "no-deploy"
+  ]
+}

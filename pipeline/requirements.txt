@@ -1,0 +1,31 @@
+# Core dependencies for engineered case law pipeline
+
+# HTTP and web scraping
+requests>=2.31.0
+
+# PDF text extraction
+PyPDF2>=3.0.0
+
+# Azure SDK for OCR (optional - only if using Azure Document Intelligence)
+azure-ai-documentintelligence>=1.0.0
+azure-core>=1.29.0
+
+# Database
+# (SQLite is built-in to Python)
+
+# Data processing
+dataclasses-json>=0.6.0
+
+# Language detection (optional - for better bilingual detection)
+langdetect>=1.0.9
+
+# Text chunking
+tiktoken>=0.5.0  # For token counting with OpenAI models
+
+# Azure OpenAI for embeddings (for chunk generation)
+openai>=1.0.0
+
+# Progress tracking
+tqdm>=4.66.0
+
+# ECL v2 Generator (no additional deps - uses stdlib only)
