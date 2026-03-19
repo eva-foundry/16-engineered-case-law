@@ -2,8 +2,8 @@
   "meta": {
     "schema": "eva.reconciliation.v2",
     "generated_at": "2026-02-25T06:37:10.598Z",
-    "repo": "C:\\AICOE\\eva-foundation\\16-engineered-case-law",
-    "discovery_path": "C:\\AICOE\\eva-foundation\\16-engineered-case-law\\.eva\\discovery.json"
+    "repo": "C:\\eva-foundry\\eva-foundation\\16-engineered-case-law",
+    "discovery_path": "C:\\eva-foundry\\eva-foundation\\16-engineered-case-law\\.eva\\discovery.json"
   },
   "coverage": {
     "stories_total": 17,

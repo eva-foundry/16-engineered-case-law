@@ -1,0 +1,18 @@
+{
+  "results": {
+    "steps": [
+      "copilot-instructions:SKIP",
+      "PLAN.md:SKIP",
+      "STATUS.md:SKIP",
+      "ACCEPTANCE.md:SKIP",
+      "README.md:CHECKED",
+      "PROJECT-ORGANIZATION.md:CREATED",
+      "API-SYNC:EXISTS"
+    ],
+    "folder": "16-engineered-case-law"
+  },
+  "primed_by": "agent:copilot",
+  "template_version": "6.1.0",
+  "primed_at": "2026-03-15T02:25:01+00:00",
+  "dry_run": false
+}

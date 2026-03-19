@@ -1,0 +1,18 @@
+{
+  "steps": [
+    "copilot-instructions:REPAIRED",
+    "PLAN.md:SKIP-MANAGED-ONLY",
+    "STATUS.md:SKIP-MANAGED-ONLY",
+    "ACCEPTANCE.md:SKIP-MANAGED-ONLY",
+    "README.md:SKIP-MANAGED-ONLY",
+    "PROJECT-ORGANIZATION.md:REPAIRED",
+    "API-SYNC:SKIP-MANAGED-ONLY",
+    "EVIDENCE:SKIP-MANAGED-ONLY"
+  ],
+  "before_version": "2.1.0",
+  "dry_run": false,
+  "project": "16-engineered-case-law",
+  "after_version": "6.2.0",
+  "copilot_step": "copilot-instructions:REPAIRED",
+  "timestamp": "2026-03-15T02:51:51+00:00"
+}

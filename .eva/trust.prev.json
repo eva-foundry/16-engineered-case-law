@@ -2,8 +2,8 @@
   "meta": {
     "schema": "eva.trust.v2",
     "generated_at": "2026-02-25T06:19:43.901Z",
-    "repo": "C:\\AICOE\\eva-foundation\\16-engineered-case-law",
-    "reconciliation_path": "C:\\AICOE\\eva-foundation\\16-engineered-case-law\\.eva\\reconciliation.json"
+    "repo": "C:\\eva-foundry\\eva-foundation\\16-engineered-case-law",
+    "reconciliation_path": "C:\\eva-foundry\\eva-foundation\\16-engineered-case-law\\.eva\\reconciliation.json"
   },
   "score": 0,
   "stale": false,

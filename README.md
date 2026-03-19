@@ -6,11 +6,32 @@ README-ENGINEERED-CASE-LAW.md
 
 # JP Engineered Case Law
 
-**PoC Implementation – ECL v2.1 Pipeline with Deferred CDC & Source Validation**
+<!-- eva-primed -->
+<!-- foundation-primer: 2026-03-03 by agent:copilot -->
+
+## EVA Ecosystem Integration
+
+| Tool | Purpose | How to Use |
+|------|---------|------------|
+| 37-data-model | Single source of truth for all project entities | GET http://localhost:8010/model/projects/16-engineered-case-law |
+| 29-foundry | Agentic capabilities (search, RAG, eval, observability) | C:\eva-foundry\eva-foundation\29-foundry |
+| 48-eva-veritas | Trust score and coverage audit | MCP tool: audit_repo / get_trust_score |
+| 07-foundation-layer | Copilot instructions primer + governance templates | MCP tool: apply_primer / audit_project |
+
+**Agent rule**: Query the data model API before reading source files.
+```powershell
+Invoke-RestMethod "http://localhost:8010/model/agent-guide"   # complete protocol
+Invoke-RestMethod "http://localhost:8010/model/agent-summary" # all layer counts
+```
+
+---
+
+
+**PoC Implementation ? ECL v2.1 Pipeline with Deferred CDC & Source Validation**
 
 ## Status
 
-**✅ ECL v2.2.1 Production Ready – 22,356 Cases Generated**
+**? ECL v2.2.1 Production Ready ? 22,356 Cases Generated**
 
 **Current Achievement (February 1, 2026)**: 
 - **22,356 ECL v2.2.1 files** generated (10,763 EN + 11,593 FR) in 5 min 3 sec
@@ -19,20 +40,20 @@ README-ENGINEERED-CASE-LAW.md
 - **Quality metrics**: 97% substantive anchors, 68% EI term coverage, 0.02% judge names, zero errors
 - **Production-grade**: 8/8 unit tests passed, comprehensive validation, complete documentation
 
-**📚 Documentation Suite** (UPDATED — February 1, 2026):
-- **⭐ [ECL v2.2 Comprehensive Guide](./ECL-COMPREHENSIVE-GUIDE.md)** — 11,000+ words: v2.2.1 implementation details, quality improvements, before/after comparisons
-- **🤖 [Copilot Instructions](./engineered-case-law.instructions.md)** — 7,800+ words: AI assistant guidelines for ECL pipeline development
-- **📋 [Quick Reference Card](./ECL-QUICK-REFERENCE.md)** — 3,200+ words: Updated with v2.2.1 enhancements
-- **🎉 [Final Implementation Summary](./ECL-V2.2-FINAL-SUMMARY.md)** — v2.2.0 achievements
-- **🔬 [v2.2.1 Implementation Guide](./ECL-V2.2.1-IMPLEMENTATION-GUIDE.md)** — Complete technical implementation details
+**?? Documentation Suite** (UPDATED ? February 1, 2026):
+- **? [ECL v2.2 Comprehensive Guide](./ECL-COMPREHENSIVE-GUIDE.md)** ? 11,000+ words: v2.2.1 implementation details, quality improvements, before/after comparisons
+- **?? [Copilot Instructions](./engineered-case-law.instructions.md)** ? 7,800+ words: AI assistant guidelines for ECL pipeline development
+- **?? [Quick Reference Card](./ECL-QUICK-REFERENCE.md)** ? 3,200+ words: Updated with v2.2.1 enhancements
+- **?? [Final Implementation Summary](./ECL-V2.2-FINAL-SUMMARY.md)** ? v2.2.0 achievements
+- **?? [v2.2.1 Implementation Guide](./ECL-V2.2.1-IMPLEMENTATION-GUIDE.md)** ? Complete technical implementation details
 
 **Key Features (v2.2.1)**:
-- ✅ **Substance-First RETRIEVAL_ANCHOR**: Hierarchical detection (97% start at [1] or headings, not boilerplate)
-- ✅ **EI-Aware Keywords**: 60-term bilingual lexicon, multi-word phrases, statute detection, judge filtering
-- ✅ **Quality Improvements**: 4× domain relevance, 572-char avg boilerplate reduction, zero judge names
-- ✅ **Zero Performance Impact**: Same 5-minute generation time as v2.2.0 (4,427 files/min)
-- ✅ **5-Folder Layout**: Physical pre-filtering by tribunal (scc/fca/fc/sst/unknown)
-- ✅ **Compact Micro-Headers**: 160-char limit, YYYYMMDD dates, sequential counters
+- ? **Substance-First RETRIEVAL_ANCHOR**: Hierarchical detection (97% start at [1] or headings, not boilerplate)
+- ? **EI-Aware Keywords**: 60-term bilingual lexicon, multi-word phrases, statute detection, judge filtering
+- ? **Quality Improvements**: 4? domain relevance, 572-char avg boilerplate reduction, zero judge names
+- ? **Zero Performance Impact**: Same 5-minute generation time as v2.2.0 (4,427 files/min)
+- ? **5-Folder Layout**: Physical pre-filtering by tribunal (scc/fca/fc/sst/unknown)
+- ? **Compact Micro-Headers**: 160-char limit, YYYYMMDD dates, sequential counters
 
 **Strategic Context**:
 - Using SQLite JSON content as **convenience source** to validate ECL pipeline
@@ -42,13 +63,13 @@ README-ENGINEERED-CASE-LAW.md
 - **ECL pipeline stable** - Format/chunking proven regardless of source
 - **Next phase**: Backend ingestion + UI validation
 
-This document describes the proposed approach for downloading, extracting, engineering, and ingesting Jurisprudence (JP) case law into EVA Domain Assistant (EVA DA) using a **Change Data Capture (CDC)**–driven pipeline and an **engineered case law** representation.
+This document describes the proposed approach for downloading, extracting, engineering, and ingesting Jurisprudence (JP) case law into EVA Domain Assistant (EVA DA) using a **Change Data Capture (CDC)**?driven pipeline and an **engineered case law** representation.
 
 The goal is to enable **early ingestion, controlled evolution, and measurable quality**, using the data assets already available (PDFs in Blob + JSON text in SQLite), without assuming corpus completeness upfront.
 
 **Project Documentation:**
-- **⭐ ECL v2.2 Comprehensive Guide**: [ECL-COMPREHENSIVE-GUIDE.md](./ECL-COMPREHENSIVE-GUIDE.md) — Complete technical reference
-- **🤖 Copilot Instructions**: [engineered-case-law.instructions.md](./engineered-case-law.instructions.md) — AI assistant guidelines
+- **? ECL v2.2 Comprehensive Guide**: [ECL-COMPREHENSIVE-GUIDE.md](./ECL-COMPREHENSIVE-GUIDE.md) ? Complete technical reference
+- **?? Copilot Instructions**: [engineered-case-law.instructions.md](./engineered-case-law.instructions.md) ? AI assistant guidelines
 - Initial discovery: [repo-inspection-20260128-1354.md](./repo-inspection-20260128-1354.md)
 - Acceptance criteria: [ACCEPTANCE.md](./ACCEPTANCE.md)
 - Tasks breakdown: [engineered-case-law-tasks.md](./engineered-case-law-tasks.md)
@@ -56,18 +77,18 @@ The goal is to enable **early ingestion, controlled evolution, and measurable qu
 - ECL v2.1 specification: [pipeline/README-ECL-V2.md](./pipeline/README-ECL-V2.md)
 
 **Implementation Status (February 1, 2026):**
-- ✅ **PoC EPICs 1-6**: ECL pipeline validated with SQLite source
-- ⚠️ **Source Quality Gate**: JSON vs PDF/HTML comparison **NOT YET DONE**
-- ⏳ **EPIC 7 (Next)**: Backend ingestion + UI content management validation
-- ⏳ **CDC Integration**: Deferred until after PoC validation
-- ⏳ **Production Source**: Decision pending quality analysis
+- ? **PoC EPICs 1-6**: ECL pipeline validated with SQLite source
+- ?? **Source Quality Gate**: JSON vs PDF/HTML comparison **NOT YET DONE**
+- ? **EPIC 7 (Next)**: Backend ingestion + UI content management validation
+- ? **CDC Integration**: Deferred until after PoC validation
+- ? **Production Source**: Decision pending quality analysis
 
 **PoC Strategy:**
-1. ✅ **Phase 1 (Complete)**: Validate ECL pipeline using SQLite JSON (convenience data)
-2. ⏳ **Phase 2 (Current)**: Backend ingestion + UI testing
-3. ⏳ **Phase 3 (Pending)**: Compare JSON vs PDF/HTML content quality
-4. ⏳ **Phase 4 (Pending)**: Select canonical source based on quality analysis
-5. ⏳ **Phase 5 (Pending)**: Implement CDC for production-scale ingestion
+1. ? **Phase 1 (Complete)**: Validate ECL pipeline using SQLite JSON (convenience data)
+2. ? **Phase 2 (Current)**: Backend ingestion + UI testing
+3. ? **Phase 3 (Pending)**: Compare JSON vs PDF/HTML content quality
+4. ? **Phase 4 (Pending)**: Select canonical source based on quality analysis
+5. ? **Phase 5 (Pending)**: Implement CDC for production-scale ingestion
 
 ---
 
@@ -96,9 +117,9 @@ The challenge is to establish a **canonical, defensible representation of case l
 
 ---
 
-## 2. What “Engineered Case Law” Means
+## 2. What ?Engineered Case Law? Means
 
-“Engineered case law” is **not raw documents**.
+?Engineered case law? is **not raw documents**.
 
 It is a **normalized, traceable, retrieval-ready representation** of each case, produced through a governed pipeline.
 
@@ -149,19 +170,19 @@ This allows EVA DA to behave predictably and defensibly when answering adjudicat
 
 ```
 CanLII Inventory Snapshot
-        ↓
+        ?
 CDC Diff (new / changed cases)
-        ↓
+        ?
 Artifact Acquisition
 (PDF + HTML metadata)
-        ↓
-Text Extraction (PDF → OCR only if needed)
-        ↓
+        ?
+Text Extraction (PDF ? OCR only if needed)
+        ?
 Canonical Case Text (per language)
-        ↓
+        ?
 Engineered Case Law Generation
 (deterministic chunking + metadata)
-        ↓
+        ?
 EVA DA Index Update
 ```
 
@@ -179,7 +200,7 @@ EVA DA Index Update
 * **Quality filtering**: Minimum content length enforcement (default 1,000 chars)
 * **Provenance tracking**: PDF blob paths referenced but not re-extracted
 
-**⚠️ CRITICAL DECISION PENDING**: Source quality validation not yet performed:
+**?? CRITICAL DECISION PENDING**: Source quality validation not yet performed:
 - JSON content quality vs PDF text extraction **comparison needed**
 - HTML content quality vs PDF **comparison needed**
 - OCR requirements **not yet assessed** (% of PDFs image-only)
@@ -214,7 +235,7 @@ EVA DA Index Update
    * readable character distribution
    * coverage beyond first page
 
-If gates pass → text is accepted.
+If gates pass ? text is accepted.
 
 ### Selective OCR
 
@@ -347,7 +368,7 @@ Initial testing focuses on:
 
 ---
 
-## 10. Measuring “Does This Work?”
+## 10. Measuring ?Does This Work??
 
 Quality is measured explicitly, not assumed.
 
@@ -374,8 +395,8 @@ These metrics guide whether EVA DA scoring, filtering, or prompting needs adjust
 ## 11. Known Risks (Acknowledged)
 
 * CanLII source coverage gaps require explicit client acceptance.
-* Bilingual splitting may fail in edge cases → handled via tagging.
-* OCR quality is imperfect → mitigated by selective use and traceability.
+* Bilingual splitting may fail in edge cases ? handled via tagging.
+* OCR quality is imperfect ? mitigated by selective use and traceability.
 
 None of these block initial ingestion.
 
@@ -392,52 +413,52 @@ None of these block initial ingestion.
 
 ## 13. Completed Achievements & Next Steps
 
-### ✅ Completed (February 1, 2026)
+### ? Completed (February 1, 2026)
 
-1. ✅ **SQLite bridge operational** - 102,678 EN + 117,174 FR pages loaded
-2. ✅ **ECL v2.1 generator operational** - 419 cases generated with micro-headers
-3. ✅ **Stratified sampling implemented** - Deterministic SHA256-based selection
-4. ✅ **Validation framework built** - Pre-flight, record-level, format validation
-5. ✅ **Configuration management** - Environment variables, path auto-detection
-6. ✅ **Production logging** - Structured logging with console + file handlers
-7. ✅ **Multi-page aggregation** - Automatic page concatenation with ordering
-8. ✅ **Keyword extraction** - Frequency-based with bilingual stopword filtering
-9. ✅ **Micro-header chunking** - Sequential counters with word-boundary awareness
-10. ✅ **Content hashing** - SHA256 deduplication support
+1. ? **SQLite bridge operational** - 102,678 EN + 117,174 FR pages loaded
+2. ? **ECL v2.1 generator operational** - 419 cases generated with micro-headers
+3. ? **Stratified sampling implemented** - Deterministic SHA256-based selection
+4. ? **Validation framework built** - Pre-flight, record-level, format validation
+5. ? **Configuration management** - Environment variables, path auto-detection
+6. ? **Production logging** - Structured logging with console + file handlers
+7. ? **Multi-page aggregation** - Automatic page concatenation with ordering
+8. ? **Keyword extraction** - Frequency-based with bilingual stopword filtering
+9. ? **Micro-header chunking** - Sequential counters with word-boundary awareness
+10. ? **Content hashing** - SHA256 deduplication support
 
-### ⏳ Next Steps (PoC Phase Priority)
+### ? Next Steps (PoC Phase Priority)
 
 **Phase 2: Backend Ingestion + UI Validation (CURRENT)**
-1. ✅ ECL v2.1 files generated (419 cases ready)
-2. ⏳ Load ECL data into EVA DA backend **programmatically**
-3. ⏳ Validate processing in backend (parsing, indexing, embedding)
-4. ⏳ Inspect results in **UI content management**
-5. ⏳ Test retrieval with sample queries
-6. ⏳ Verify micro-header chunks render correctly
+1. ? ECL v2.1 files generated (419 cases ready)
+2. ? Load ECL data into EVA DA backend **programmatically**
+3. ? Validate processing in backend (parsing, indexing, embedding)
+4. ? Inspect results in **UI content management**
+5. ? Test retrieval with sample queries
+6. ? Verify micro-header chunks render correctly
 
 **Phase 3: Source Quality Analysis (CRITICAL DECISION POINT)**
-1. ⏳ Compare SQLite JSON content vs PDF text extraction (sample 100-500 cases)
+1. ? Compare SQLite JSON content vs PDF text extraction (sample 100-500 cases)
    - Quality metrics: completeness, OCR artifacts, formatting
    - Extract text from PDFs using pdfminer/pypdf
    - Apply quality gates (length, character distribution, page coverage)
-2. ⏳ Compare SQLite JSON content vs HTML content
+2. ? Compare SQLite JSON content vs HTML content
    - Assess HTML as fallback source
    - Identify which source provides best quality per tribunal
-3. ⏳ Assess OCR requirements (% of PDFs image-only)
-4. ⏳ **DECISION**: Select canonical source based on evidence
-   - If JSON quality sufficient → keep SQLite bridge
-   - If PDF quality superior → implement PDF extraction pipeline
-   - If mixed quality → implement source selection logic per case
+3. ? Assess OCR requirements (% of PDFs image-only)
+4. ? **DECISION**: Select canonical source based on evidence
+   - If JSON quality sufficient ? keep SQLite bridge
+   - If PDF quality superior ? implement PDF extraction pipeline
+   - If mixed quality ? implement source selection logic per case
 
 **Phase 4: Production Source Implementation (After Quality Decision)**
-1. ⏳ Implement selected source extraction pipeline
-2. ⏳ Regenerate ECL corpus with canonical source
-3. ⏳ Validate no quality regression in backend/UI
+1. ? Implement selected source extraction pipeline
+2. ? Regenerate ECL corpus with canonical source
+3. ? Validate no quality regression in backend/UI
 
 **Phase 5: CDC Integration (Post-PoC)**
-1. ⏳ Implement CDC inventory snapshotting (EPIC 1)
-2. ⏳ Implement incremental ingestion (EPIC 2-5)
-3. ⏳ Configure freshness monitoring (EPIC 9)
-4. ⏳ Production cutover
+1. ? Implement CDC inventory snapshotting (EPIC 1)
+2. ? Implement incremental ingestion (EPIC 2-5)
+3. ? Configure freshness monitoring (EPIC 9)
+4. ? Production cutover
 
 
